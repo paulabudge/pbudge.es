@@ -590,3 +590,91 @@ footer {
   .nav-right { gap: 0.75rem; }
   .lang-switcher { display: none; }
 }
+
+/* --- ABOUT PAGE LAYOUT --- */
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.about-header {
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: #444;
+}
+
+/* Section titles */
+.cv-section {
+  margin-top: 3rem;
+}
+
+.cv-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #222;
+  padding-left: 0.6rem;
+}
+
+/* Two-column layout */
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Job / education blocks */
+.cv-item {
+  margin-bottom: 1.5rem;
+}
+
+.cv-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.cv-item .meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.cv-item ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Expertise & tools lists */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #eee;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
