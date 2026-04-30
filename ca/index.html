@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paula Budge — Dissenyadora de Contingut i Estratega de Serveis</title>
+<meta name="description" content="Dissenyadora de Contingut i Estratega de Serveis a Barcelona. Transformo sistemes complexos en experiències digitals clares, empàtiques i intuïtives.">
+<link rel="alternate" hreflang="en" href="../en/index.html">
+<link rel="alternate" hreflang="es" href="../es/index.html">
+<link rel="alternate" hreflang="ca" href="../ca/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clear+Sans:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../home.css">
+</head>
+<body>
 
+<a href="#main" class="sr-only">Saltar al contingut principal</a>
+
+<nav role="navigation" aria-label="Navegació principal">
+  <a href="index.html" class="nav-logo" aria-label="Paula Budge - inici">Paula <span>Budge</span></a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" class="active">Inici</a></li>
+    <li><a href="work.html">La meva feina</a></li>
+    <li><a href="about.html">Sobre mi</a></li>
+    <li><a href="contact.html">Contacte</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher" aria-label="Selector d'idioma">
+      <a href="../en/index.html" class="lang-opt" lang="en">EN</a>
+      <a href="../es/index.html" class="lang-opt" lang="es">ES</a>
+      <a href="../ca/index.html" class="lang-opt active" aria-current="true" lang="ca">CA</a>
+    </div>
+    <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegació">
+  <a href="index.html">Inici</a>
+  <a href="work.html">La meva feina</a>
+  <a href="about.html">Sobre mi</a>
+  <a href="contact.html">Contacte</a>
+  <div class="mobile-lang">
+    <a href="../en/index.html" class="lang-opt" lang="en">EN</a>
+    <a href="../es/index.html" class="lang-opt" lang="es">ES</a>
+    <a href="../ca/index.html" class="lang-opt active" lang="ca">CA</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="home-heading">
+    <div class="hero-text">
+      <p class="eyebrow">Dissenyadora de Contingut · Estratega de Serveis · Barcelona</p>
+      <h1 class="hero-headline" id="home-heading">
+        Dissenyo experiències digitals<br>que <em>parlen humà.</em>
+      </h1>
+      <p class="hero-sub">Transformo sistemes complexos en experiències digitals clares, empàtiques i intuïtives per a persones reals.</p>
+      <div class="hero-ctas">
+        <a href="work.html" class="btn btn-primary">Veure la meva feina</a>
+        <a href="contact.html" class="btn btn-outline">Parlem</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO + MANIFESTO -->
+  <section class="manifesto-section" aria-labelledby="manifesto-heading">
+    <div class="manifesto-photo-wrap">
+      <img src="../paula.png" alt="Paula Budge somrient en un carrer de Barcelona" class="manifesto-photo" width="480" height="560">
+    </div>
+    <div class="manifesto-text">
+      <p class="eyebrow" aria-hidden="true">La meva filosofia</p>
+      <h2 class="manifesto-headline" id="manifesto-heading">
+        La claredat no és un accident;<br>és una <mark>decisió.</mark>
+      </h2>
+      <p class="manifesto-moliner">
+        Inspirada en <strong>María Moliner</strong> — que va convertir la complexitat del llenguatge en una eina per a tothom — aplico aquesta mateixa obsessió al disseny de contingut:
+      </p>
+      <ul class="manifesto-list" aria-label="Principis fonamentals">
+        <li>
+          <span class="manifesto-label">Precisió</span>
+          <span class="manifesto-value">Cada paraula té un propòsit.</span>
+        </li>
+        <li>
+          <span class="manifesto-label">Cura</span>
+          <span class="manifesto-value">L'empatia és el nucli de cada flux d'usuari.</span>
+        </li>
+        <li>
+          <span class="manifesto-label">Estratègia</span>
+          <span class="manifesto-value">El contingut és l'espina dorsal del servei, no només la pell.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section class="services-section" aria-labelledby="services-heading">
+    <div class="services-header">
+      <p class="eyebrow" aria-hidden="true">Què faig</p>
+      <h2 class="section-title" id="services-heading">Com puc ajudar-te</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card" aria-label="Disseny i estratègia de contingut">
+        <div class="service-icon" aria-hidden="true">01</div>
+        <h3 class="service-title">Disseny i estratègia de contingut</h3>
+        <p class="service-desc">Dissenyo sistemes de contingut intuïtius i microcopy que guien els usuaris a través de productes digitals complexos.</p>
+      </article>
+      <article class="service-card" aria-label="Localització i escriptura UX">
+        <div class="service-icon" aria-hidden="true">02</div>
+        <h3 class="service-title">Localització i UX Writing</h3>
+        <p class="service-desc">Adapto productes per a mercats globals amb focus en l'empatia cultural i la precisió lingüística (Llatinoamèrica i Espanya).</p>
+      </article>
+      <article class="service-card" aria-label="Disseny i estratègia de serveis">
+        <div class="service-icon" aria-hidden="true">03</div>
+        <h3 class="service-title">Disseny i estratègia de serveis</h3>
+        <p class="service-desc">Mapeig ecosistemes i blueprints per garantir interaccions fluides en cada punt de contacte del servei.</p>
+      </article>
+    </div>
+    <div class="services-cta">
+      <a href="work.html" class="btn btn-primary">Veure els meus projectes</a>
+      <a href="contact.html" class="btn btn-outline">Treballem junts</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span class="year"></span> Paula Budge · Dissenyadora de Contingut &amp; Estratega de Serveis · Barcelona</p>
+</footer>
+
+<script src="../main.js"></script>
+</body>
+</html>
