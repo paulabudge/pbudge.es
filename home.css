@@ -1,0 +1,284 @@
+/* ── HOME.CSS — Homepage-specific styles ── */
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  padding: calc(var(--nav-h) + 4rem) var(--pad-x) 5rem;
+}
+
+.hero-text { max-width: 780px; }
+
+.hero-headline {
+  font-family: var(--font-title);
+  font-size: clamp(2.6rem, 6.5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+.hero-headline em {
+  font-style: normal;
+  color: var(--primary);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--neutral);
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ── MANIFESTO ── */
+.manifesto-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+  background: var(--bg);
+}
+
+.manifesto-photo-wrap {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+}
+
+.manifesto-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(15%);
+}
+
+.manifesto-text {
+  padding: clamp(3rem, 6vw, 5rem) clamp(2rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
+}
+
+.manifesto-headline {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.manifesto-headline mark {
+  background: none;
+  color: var(--accent);
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline effect on mark */
+.manifesto-headline mark::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.manifesto-moliner {
+  font-size: 0.95rem;
+  color: var(--neutral);
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--bg);
+}
+
+.manifesto-moliner strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.manifesto-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.manifesto-list li {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--bg);
+}
+.manifesto-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
+.manifesto-label {
+  font-family: var(--font-title);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+}
+
+.manifesto-value {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* ── SERVICES ── */
+.services-section {
+  padding: clamp(4rem, 8vw, 7rem) var(--pad-x);
+  background: var(--neutral);
+}
+
+.services-header {
+  margin-bottom: 3rem;
+}
+.services-section .eyebrow { color: var(--cta); }
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-top: 3px solid var(--primary);
+  padding: 2rem 1.75rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  background: rgba(255,255,255,0.09);
+  transform: translateY(-3px);
+}
+
+.service-icon {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.08);
+  line-height: 1;
+  margin-bottom: 1.25rem;
+  user-select: none;
+}
+
+.service-title {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.service-desc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.services-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ── NAV LANG SWITCHER ── */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1.5px solid rgba(47,79,79,0.25);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.lang-opt {
+  font-family: var(--font-title);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  color: var(--neutral);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  border-right: 1.5px solid rgba(47,79,79,0.15);
+  line-height: 1;
+}
+.lang-opt:last-child { border-right: none; }
+.lang-opt:hover { background: var(--bg); color: var(--primary); }
+.lang-opt.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.mobile-lang {
+  display: flex;
+  gap: 0;
+  border: 1.5px solid rgba(47,79,79,0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .manifesto-section { grid-template-columns: 1fr; }
+  .manifesto-photo-wrap { min-height: 320px; max-height: 420px; }
+  .manifesto-photo { object-position: center 20%; }
+  .services-grid { grid-template-columns: 1fr; }
+  .nav-right { gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-headline { font-size: 2.2rem; }
+  .manifesto-list li { grid-template-columns: 1fr; gap: 0.25rem; }
+}
