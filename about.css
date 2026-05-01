@@ -1,0 +1,276 @@
+/* ── ABOUT.CSS — About Me page specific styles ── */
+
+/* ── HERO BIO ── */
+.about-hero {
+  background: var(--white);
+  padding: calc(var(--nav-h) + 3rem) var(--pad-x) 4rem;
+  border-bottom: 2px solid var(--bg);
+}
+
+.about-hero-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-lead {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--neutral);
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 720px;
+  margin-bottom: 3rem;
+}
+
+.about-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.pillar-card {
+  border-top: 3px solid var(--accent);
+  padding-top: 1.25rem;
+}
+
+.pillar-label {
+  display: block;
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.pillar-desc {
+  font-size: 0.92rem;
+  color: var(--neutral);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ── CV SECTIONS ── */
+.cv-section {
+  padding: 4rem var(--pad-x);
+  background: var(--bg);
+}
+
+.cv-section--alt {
+  background: var(--white);
+}
+
+.cv-section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.cv-sidebar {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+
+.cv-section-title {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+}
+
+/* ── TIMELINE ── */
+.cv-timeline {
+  list-style: none;
+  border-left: 2px solid rgba(10, 116, 218, 0.15);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cv-entry {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.cv-entry:last-child {
+  padding-bottom: 0;
+}
+
+/* Dot on the timeline */
+.cv-entry::before {
+  content: '';
+  position: absolute;
+  left: -2.45rem;
+  top: 0.4rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--white);
+  outline: 2px solid var(--primary);
+}
+
+.cv-entry-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-date {
+  font-family: var(--font-title);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+
+.cv-sector {
+  font-family: var(--font-title);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  background: var(--neutral);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+}
+
+.cv-role {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.cv-org {
+  font-size: 0.88rem;
+  color: var(--neutral);
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.cv-note {
+  font-size: 0.82rem;
+  color: var(--neutral);
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 0.25rem;
+}
+
+.cv-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cv-bullets li {
+  font-size: 0.88rem;
+  color: var(--neutral);
+  font-weight: 300;
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.cv-bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* ── SKILLS SECTION ── */
+.skills-section {
+  background: var(--primary);
+  padding: 4rem var(--pad-x);
+}
+
+.skills-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.skills-section .eyebrow {
+  color: var(--cta);
+}
+
+.skills-section .cv-section-title {
+  color: var(--white);
+  margin-bottom: 1.25rem;
+}
+
+/* Override skill-tag colours for dark background */
+.skills-section .skill-tag {
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.skills-section .skills-row {
+  gap: 0.5rem;
+}
+
+/* Language list */
+.lang-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lang-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 0.75rem;
+}
+
+.lang-item:last-child {
+  border-bottom: none;
+}
+
+.lang-name {
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.lang-level {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  font-weight: 300;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .about-pillars { grid-template-columns: 1fr 1fr; }
+  .skills-inner { grid-template-columns: 1fr 1fr; }
+  .cv-section-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .cv-sidebar { position: static; }
+}
+
+@media (max-width: 600px) {
+  .about-pillars { grid-template-columns: 1fr; }
+  .skills-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .cv-timeline { padding-left: 1.25rem; }
+  .cv-entry::before { left: -1.7rem; }
+}
