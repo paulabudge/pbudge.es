@@ -2,17 +2,104 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=en/index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paula Budge — Content Designer & Service Strategist</title>
-<meta name="description" content="Paula Budge — Content Designer & Service Strategist based in Barcelona.">
-<link rel="canonical" href="en/index.html">
-<style>
-  body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f5f7fa; }
-  p { color: #2f4f4f; font-size: 1rem; }
-  a { color: #0a74da; }
-</style>
+<meta name="description" content="Content Designer & Service Strategist based in Barcelona.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clear+Sans:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <p>Redirecting… <a href="en/index.html">Click here if not redirected.</a></p>
+<a href="#main" class="sr-only" data-i18n="skip_link">Skip to main content</a>
+<nav role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Paula Budge - home">Paula <span>Budge</span></a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+    <li><a href="work.html" data-i18n="nav_work">My Work</a></li>
+    <li><a href="about.html" data-i18n="nav_about">About Me</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher" aria-label="Language selector">
+      <button class="lang-opt" data-lang="en">EN</button>
+      <button class="lang-opt" data-lang="es">ES</button>
+      <button class="lang-opt" data-lang="ca">CA</button>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html" data-i18n="nav_home">Home</a>
+  <a href="work.html" data-i18n="nav_work">My Work</a>
+  <a href="about.html" data-i18n="nav_about">About Me</a>
+  <a href="contact.html" data-i18n="nav_contact">Contact</a>
+  <div class="mobile-lang">
+    <button class="lang-opt" data-lang="en">EN</button>
+    <button class="lang-opt" data-lang="es">ES</button>
+    <button class="lang-opt" data-lang="ca">CA</button>
+  </div>
+</div>
+<main id="main">
+  <section class="hero" aria-labelledby="home-heading">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="home_eyebrow">Content Designer · Service Strategist · Barcelona</p>
+      <h1 class="hero-headline" id="home-heading" data-i18n="home_headline">I design digital experiences that <em>speak human.</em></h1>
+      <p class="hero-sub" data-i18n="home_sub">I transform complex systems into clear, caring and intuitive journeys for real people.</p>
+      <div class="hero-ctas">
+        <a href="work.html" class="btn btn-primary" data-i18n="home_cta_work">See My Work</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="home_cta_contact">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+  <section class="manifesto-section" aria-labelledby="manifesto-heading">
+    <div class="manifesto-inner">
+      <h2 class="manifesto-headline" id="manifesto-heading">
+        <span data-i18n="home_manifesto_headline_pre">Clarity is not an accident; it's a</span> <span class="choice-box" data-i18n="home_manifesto_choice">CHOICE</span>
+      </h2>
+      <div class="manifesto-body">
+        <p class="manifesto-moliner" data-i18n="home_manifesto_moliner">Inspired by <strong>María Moliner</strong> — who turned the complexity of language into a tool for everyone — I apply that same obsession to Content Design:</p>
+        <ul class="manifesto-list" aria-label="Core principles">
+          <li><span class="manifesto-label" data-i18n="home_precision_label">Precision</span><span class="manifesto-value" data-i18n="home_precision_value">Every word has a purpose.</span></li>
+          <li><span class="manifesto-label" data-i18n="home_care_label">Care</span><span class="manifesto-value" data-i18n="home_care_value">Empathy is the core of every user flow.</span></li>
+          <li><span class="manifesto-label" data-i18n="home_strategy_label">Strategy</span><span class="manifesto-value" data-i18n="home_strategy_value">Content is the backbone of the service, not just the skin.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="services-section" aria-labelledby="services-heading">
+    <div class="services-header">
+      <p class="eyebrow" data-i18n="home_services_eyebrow">What I do</p>
+      <h2 class="section-title" id="services-heading" data-i18n="home_services_title">How I can help you</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">01</div>
+        <h3 class="service-title" data-i18n="home_s1_title">Content Design & Strategy</h3>
+        <p class="service-desc" data-i18n="home_s1_desc">Designing intuitive content systems and microcopy that guide users through complex digital products.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">02</div>
+        <h3 class="service-title" data-i18n="home_s2_title">Localization & UX Writing</h3>
+        <p class="service-desc" data-i18n="home_s2_desc">Adapting products for global markets with a focus on cultural empathy and linguistic precision.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">03</div>
+        <h3 class="service-title" data-i18n="home_s3_title">Service Design & Strategy</h3>
+        <p class="service-desc" data-i18n="home_s3_desc">Mapping ecosystems and blueprints to ensure seamless interactions across every service touchpoint.</p>
+      </article>
+    </div>
+    <div class="services-cta">
+      <a href="work.html" class="btn btn-primary" data-i18n="home_cta_projects">See my projects</a>
+      <a href="contact.html" class="btn btn-outline" data-i18n="home_cta_work_with">Work with me</a>
+    </div>
+  </section>
+</main>
+<footer><p>© <span class="year"></span> Paula Budge · <span data-i18n="footer_text">Content Designer & Service Strategist · Barcelona</span></p></footer>
+<script src="translations.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

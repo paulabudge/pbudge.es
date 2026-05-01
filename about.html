@@ -4,14 +4,277 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me — Paula Budge</title>
-<meta name="description" content="Paula Budge — Content Designer & Service Strategist based in Barcelona.">
+<meta name="description" content="Content Designer & Service Strategist with 10+ years of experience. Based in Barcelona, working at the intersection of language, systems and human behaviour.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Clear+Sans:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="about.css">
 </head>
 <body>
-<p style="padding:4rem 2rem;font-family:sans-serif;color:#2f4f4f;">Loading…</p>
-<script>window.location.href='en/about.html';</script>
+
+<a href="#main" class="sr-only">Skip to main content</a>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Paula Budge - home">Paula <span>Budge</span></a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+    <li><a href="work.html" data-i18n="nav_work">My Work</a></li>
+    <li><a href="about.html" class="active" data-i18n="nav_about">About Me</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher" aria-label="Language selector">
+      <button class="lang-opt" data-lang="en">EN</button>
+      <button class="lang-opt" data-lang="es">ES</button>
+      <button class="lang-opt" data-lang="ca">CA</button>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html" data-i18n="nav_home">Home</a>
+  <a href="work.html" data-i18n="nav_work">My Work</a>
+  <a href="about.html">About Me</a>
+  <a href="contact.html" data-i18n="nav_contact">Contact</a>
+  <div class="mobile-lang">
+    <a href="about.html" class="lang-opt active" lang="en">EN</a>
+    <button class="lang-opt" data-lang="es">ES</button>
+    <button class="lang-opt" data-lang="ca">CA</button>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO BIO -->
+  <section class="about-hero" aria-labelledby="about-heading">
+    <div class="about-hero-inner">
+      <p class="eyebrow">CV · Background</p>
+      <h1 class="page-title" id="about-heading" data-i18n="about_title">About Me</h1>
+      <p class="about-lead" data-i18n="about_lead">I am a Content Designer and Service Strategist with over 10 years of experience building bridges between complex systems and human needs. Recently relocated to Barcelona, I help local and global teams design services that are as intuitive as they are impactful.</p>
+
+      <div class="about-pillars" aria-label="What I bring to the table">
+        <div class="pillar-card">
+          <span class="pillar-label">Strategic Lens</span>
+          <p class="pillar-desc">I don't just write — I design systems. I use Service Design methodologies to ensure every touchpoint, from microcopy to service blueprints, aligns with user needs and business goals.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-label">Global Perspective</span>
+          <p class="pillar-desc">Having worked across different markets, I understand the nuances of localisation and the importance of cultural empathy in digital products.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-label">Obsession with Clarity</span>
+          <p class="pillar-desc">I thrive in complexity. My goal is always to reduce friction and cognitive load, making technology feel less like a hurdle and more like a conversation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="cv-section" aria-labelledby="experience-heading">
+    <div class="cv-section-inner">
+      <div class="cv-sidebar">
+        <p class="eyebrow">Experience</p>
+        <h2 class="cv-section-title" id="experience-heading">Professional background</h2>
+      </div>
+      <ol class="cv-timeline" aria-label="Work experience">
+
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">May 2024 – Present</span>
+            <span class="cv-sector">Innovation</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">Communications &amp; Partner Engagement Manager</h3>
+            <p class="cv-org">TIAO · Brussels, Belgium (Remote)</p>
+            <ul class="cv-bullets">
+              <li>Led digital platform strategy and lifecycle management across complex innovation initiatives.</li>
+              <li>Designed and executed a B2B Content Strategy including learning materials, case studies and webinar scripts.</li>
+              <li>Defined digital performance metrics for new website launch, incorporating SEO best practices.</li>
+              <li>Served as primary liaison for international partners and high-level stakeholders across multiple countries.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">Nov 2023 – May 2024</span>
+            <span class="cv-sector">Government</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">Senior UX Writer &amp; Content Designer</h3>
+            <p class="cv-org">Inter-American Development Bank · Remote</p>
+            <ul class="cv-bullets">
+              <li>Wrote UX copy for the redesign of the "Alerta Contra el Racismo" platform, ensuring quality, consistency and accessibility.</li>
+              <li>Developed a Content Governance Strategy with content design and translation guidelines.</li>
+              <li>Conducted user testing alongside UX specialists to inform service and content design decisions.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">Oct 2018 – Apr 2023</span>
+            <span class="cv-sector">Government</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">Senior UX Writer &amp; Content Manager</h3>
+            <p class="cv-org">Peruvian Presidency of the Council of Ministers – PROMSACE · Remote</p>
+            <ul class="cv-bullets">
+              <li>Directed platform governance and editorial guidelines for Gob.pe, Peru's national digital platform with 40M+ monthly users.</li>
+              <li>Designed and executed a G2C Content Strategy including citizen guides, impact stories and educational webinar scripts.</li>
+              <li>Led content strategy and UX writing for high-stakes projects including Coronavirus.pe and the Coronavirus Digital Assistant (chatbot).</li>
+              <li>Managed and mentored a team of junior and mid-level content specialists.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">Jun 2016 – Sep 2018</span>
+            <span class="cv-sector">Education</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">Content Creation Specialist</h3>
+            <p class="cv-org">National Scholarship and Education Loans Program · Lima, Peru</p>
+            <ul class="cv-bullets">
+              <li>Defined management and communication strategy for the "Beca 18 Intranet" platform, improving user satisfaction by 40%.</li>
+              <li>Implemented a content and SEO strategy that increased website traffic by 30%.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">Nov 2015 – Oct 2017</span>
+            <span class="cv-sector">Agency</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">Marketing &amp; Content Creation Analyst</h3>
+            <p class="cv-org">Inspira Communication &amp; Technology · Lima, Peru</p>
+            <ul class="cv-bullets">
+              <li>Used data analytics tools to track performance and provide insights for strategic digital communication.</li>
+              <li>Created multimedia content (video, graphics, blog posts) to drive brand awareness.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="cv-section cv-section--alt" aria-labelledby="education-heading">
+    <div class="cv-section-inner">
+      <div class="cv-sidebar">
+        <p class="eyebrow">Education</p>
+        <h2 class="cv-section-title" id="education-heading">Academic background</h2>
+      </div>
+      <ol class="cv-timeline" aria-label="Education">
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">Jan 2021 – Feb 2023</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">M.A. in Digital Communication Leadership</h3>
+            <p class="cv-org">Vrije Universiteit Brussel (VUB) / Salzburg University</p>
+            <p class="cv-note">Policy and Innovation track · Erasmus+ scholarship recipient</p>
+          </div>
+        </li>
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">Sep 2017 – Dec 2017</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">Advanced Program in Lean UX Project Management &amp; Service Design</h3>
+            <p class="cv-org">University of Engineering and Technology (UTEC)</p>
+          </div>
+        </li>
+        <li class="cv-entry">
+          <div class="cv-entry-meta">
+            <span class="cv-date">Mar 2006 – Dec 2010</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-role">Bachelor of Communication Sciences</h3>
+            <p class="cv-org">University of San Martin de Porres · Lima, Peru</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SKILLS + LANGUAGES -->
+  <section class="skills-section" aria-labelledby="skills-heading">
+    <div class="skills-inner">
+      <div class="skills-col">
+        <p class="eyebrow">Expertise</p>
+        <h2 class="cv-section-title" id="skills-heading">Areas of expertise</h2>
+        <ul class="skills-row" aria-label="Core skills">
+          <li class="skill-tag">Content Design</li>
+          <li class="skill-tag">UX Writing</li>
+          <li class="skill-tag">Service Design</li>
+          <li class="skill-tag">Content Strategy</li>
+          <li class="skill-tag">Accessibility &amp; Usability</li>
+          <li class="skill-tag">Usability Testing</li>
+          <li class="skill-tag">Localisation</li>
+          <li class="skill-tag">Project Management</li>
+          <li class="skill-tag">Agile Methodologies</li>
+          <li class="skill-tag">Design Thinking</li>
+          <li class="skill-tag">SEO</li>
+          <li class="skill-tag">AI-driven SEO</li>
+        </ul>
+      </div>
+
+      <div class="skills-col">
+        <p class="eyebrow">Tools</p>
+        <h2 class="cv-section-title">Tools &amp; software</h2>
+        <ul class="skills-row" aria-label="Tools">
+          <li class="skill-tag">Figma</li>
+          <li class="skill-tag">Miro / Mural</li>
+          <li class="skill-tag">Google Analytics</li>
+          <li class="skill-tag">Google Suite</li>
+          <li class="skill-tag">Canva</li>
+          <li class="skill-tag">Mailchimp</li>
+          <li class="skill-tag">Microsoft Office</li>
+        </ul>
+      </div>
+
+      <div class="skills-col">
+        <p class="eyebrow">Languages</p>
+        <h2 class="cv-section-title">Languages</h2>
+        <ul class="lang-list" aria-label="Languages">
+          <li class="lang-item">
+            <span class="lang-name">Spanish</span>
+            <span class="lang-level">Native</span>
+          </li>
+          <li class="lang-item">
+            <span class="lang-name">English</span>
+            <span class="lang-level">C1 — Advanced</span>
+          </li>
+          <li class="lang-item">
+            <span class="lang-name">Catalan</span>
+            <span class="lang-level">C1 — Advanced</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-cta-row" style="padding: 3rem var(--pad-x) 5rem; max-width: calc(1080px + var(--pad-x) * 2); margin: 0 auto;">
+    <a href="work.html" class="btn btn-primary">See my work</a>
+    <a href="contact.html" class="btn btn-outline">Get in touch</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© <span class="year"></span> Paula Budge · <span data-i18n="footer_text">Content Designer & Service Strategist · Barcelona</span></p>
+</footer>
+
+<script src="translations.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
