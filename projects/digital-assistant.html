@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Assistant — Paula Budge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clear+Sans:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../work.css">
+</head>
+<body>
+<a href="#main" class="sr-only" data-i18n="skip_link">Skip to main content</a>
+<nav role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo" aria-label="Paula Budge - home">Paula <span>Budge</span></a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+    <li><a href="../work.html" class="active" data-i18n="nav_work">My Work</a></li>
+    <li><a href="../about.html" data-i18n="nav_about">About Me</a></li>
+    <li><a href="../contact.html" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher" aria-label="Language selector">
+      <button class="lang-opt" data-lang="en">EN</button>
+      <button class="lang-opt" data-lang="es">ES</button>
+      <button class="lang-opt" data-lang="ca">CA</button>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="../index.html" data-i18n="nav_home">Home</a>
+  <a href="../work.html" data-i18n="nav_work">My Work</a>
+  <a href="../about.html" data-i18n="nav_about">About Me</a>
+  <a href="../contact.html" data-i18n="nav_contact">Contact</a>
+  <div class="mobile-lang">
+    <button class="lang-opt" data-lang="en">EN</button>
+    <button class="lang-opt" data-lang="es">ES</button>
+    <button class="lang-opt" data-lang="ca">CA</button>
+  </div>
+</div>
+<main id="main">
+  <section class="proj-hero">
+    <div class="proj-hero-inner">
+      <a href="../work.html" class="proj-back" data-i18n="proj_back">← Back to My Work</a>
+      <div class="proj-tag" data-i18n="tag_conversational"></div>
+      <h1 class="proj-title" data-i18n="proj_assistant_title"></h1>
+      <p class="proj-subtitle" data-i18n="proj_assistant_desc"></p>
+    </div>
+  </section>
+  
+  <section class="proj-body">
+    <div class="proj-body-inner">
+      <p class="proj-section-label" data-i18n="proj_scope_title">Scope & Role</p>
+      <div class="proj-section-content"><p>As UX Writer, I designed conversational content for a citizen-oriented chatbot, creating clear and helpful dialogues for public service interactions. The chatbot offered both interactive services — such as database queries — and informational services for citizens seeking guidance about COVID-19.</p>
+    <p>I also conducted user testing with citizens through virtual platforms to validate the chatbot's usability, clarity and effectiveness, and helped coordinate this multi-sector project combining efforts from both public and private organisations.</p></div>
+    </div>
+    <hr class="proj-divider">
+    <div class="proj-body-inner">
+      <p class="proj-section-label" data-i18n="proj_goals_title">Goals</p>
+      <div class="proj-section-content"><ul class="proj-list">
+      <li>Provide immediate, accurate, and up-to-date official information to combat misinformation.</li>
+      <li>Make complex information easy to understand for all citizens, regardless of digital literacy.</li>
+      <li>Enable citizens to complete tasks directly — such as database queries and accessing financial aid information — reducing the need for human assistance.</li>
+      <li>Create a helpful and intuitive service available 24/7.</li>
+    </ul></div>
+    </div>
+    <hr class="proj-divider">
+    <div class="proj-body-inner">
+      <p class="proj-section-label" data-i18n="proj_what_title">What I did</p>
+      <div class="proj-section-content"><ul class="proj-list">
+      <li>Information architecture.</li>
+      <li>Design of conversation flows.</li>
+      <li>Content development.</li>
+      <li>AI training.</li>
+      <li>User testing.</li>
+      <li>Project management.</li>
+    </ul></div>
+    </div>
+    <hr class="proj-divider">
+    <div class="proj-body-inner">
+      <p class="proj-section-label" data-i18n="proj_tools_title">Tools</p>
+      <div class="proj-section-content"><div class="proj-tools-grid">
+      <span class="proj-tool-tag">Figma</span>
+      <span class="proj-tool-tag">FigJam / Miro</span>
+      <span class="proj-tool-tag">Twilio</span>
+      <span class="proj-tool-tag">WhatsApp Business API</span>
+      <span class="proj-tool-tag">LUIS / Azure AI Language</span>
+    </div></div>
+    </div>
+  </section>
+  <nav class="proj-nav" aria-label="Project navigation">
+    <a href="../work.html" data-i18n="proj_back">← Back to My Work</a>
+    <a href="business-licensing.html" data-i18n="proj_licensing_title"></a>
+  </nav>
+</main>
+<footer><p>© <span class="year"></span> Paula Budge · <span data-i18n="footer_text">Content Designer & Service Strategist · Barcelona</span></p></footer>
+<script src="../translations.js"></script>
+<script src="../main.js"></script>
+</body>
+</html>
