@@ -82,6 +82,7 @@ const translations = {
     proj_results_title: "Results",
     proj_back: "← Back to My Work",
     proj_next: "Next project →",
+    proj_screenshots_title: "Screenshots",
 
     // ABOUT PAGE
     about_eyebrow: "CV · Background",
@@ -187,6 +188,7 @@ const translations = {
     proj_results_title: "Resultados",
     proj_back: "← Volver a Mi trabajo",
     proj_next: "Siguiente proyecto →",
+    proj_screenshots_title: "Capturas de pantalla",
 
     about_eyebrow: "CV · Trayectoria",
     about_title: "Sobre mí",
@@ -290,6 +292,7 @@ const translations = {
     proj_results_title: "Resultats",
     proj_back: "← Tornar a La meva feina",
     proj_next: "Següent projecte →",
+    proj_screenshots_title: "Captures de pantalla",
 
     about_eyebrow: "CV · Trajectòria",
     about_title: "Sobre mi",
